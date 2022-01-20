@@ -6,41 +6,46 @@
     <title>Cheshsworld Porfolio - Home</title>
     <meta name="description" content="cheshsworlds Portfolio" />
     <meta name="author" content="Aleksandra Simic" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- v--- the below gives the hamburger icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
-    <nav id="main-menu">
-      <ul>        
-        <li><a href="index.html">Home</a></li>
-        <li><a href="About-me.html">About me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-        <li><a href="Extra.html">Extra</a></li>
-      </ul>
-    </nav>
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="index.html">Home</a>
+        <a href="About-me.html">About me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="Extra.html">Extra</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+          <!-- the Class="icon" is the part that is used to open and close the topnav on small screens -->
+        </a>
+      </div>
 
-      <button id="hamburger-menu">
-        <nav id="sidebar-menu">
-          <h3>Menu</h3>
-        <ul>          
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About-me.html">About me</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-          <li><a href="Extra.html">Extra</a></li>
-        </ul>
-      </nav>
-      </button>
-      </header>
+      <div style="padding-left: 16px"></div>
 
-      
-   
-    
+      <!-- Toggle between adding and removing the "responsive" class to topnac when the user click on the icon -->
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+    </header>
 
-    <p><h1>Cheshsworld Portfolio</h1></p>
-
-
-    <footer>Cheshsworld Portfolio.</footer>
+    <div>
+      <footer>Cheshsworld Portfolio.</footer>
+    </div>
   </body>
 </html>

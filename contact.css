@@ -1,17 +1,21 @@
-body {
-  background-color: #104f74;
-  color: #fff;
-  font-family: "Gill Sans", sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 
-header {
-  border-bottom: 2px solid #fddc5c;
-  text-align: center;
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  min-height: 200vh;
+  font-family: "Cabin", Sans-serif;
+  background-image: linear-gradient(135deg, #3c8ce7 10%, #00eaff 100%);
 }
 
 form {
   margin: 50px auto;
   width: 90%;
+}
+
+h1 {
+  text-align: center;
 }
 
 .form-item {
@@ -24,34 +28,113 @@ form {
 .form-item label {
   flex-basis: 150px;
   font-size: 22px;
+  color: white;
 }
 
 .form-item input,
 .form-item textarea {
   flex-basis: 50%;
-  border: 2px solid #fddc5c;
+  border: 2px solid #0d0944;
 }
 
 .form-item input:hover,
 .form-item textarea:hover {
-  border: 2px solid #fa4224;
+  border: 2px solid #7dd8e4;
 }
 
 .form-item input,
 .form-item textarea,
 .form-item button {
-  border: 2px solid #fddc5c;
+  border: 2px solid #0d0944;
   background-color: #fff;
   padding: 5px;
   font-size: 18px;
 }
 
 .form-item button:hover {
-  border: 2px solid #fa4224;
-  background-color: #fa4224;
+  border: 2px solid #7dd8e4;
+  background-color: #7dd8e4;
   color: #fff;
 }
 
 .form-item button {
   width: 100px;
+}
+
+h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(rgb(29, 72, 212), rgb(29, 27, 27));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* THE HAMBURGER MENU START */
+/* adds top nav bg colour */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* style the links in the nav bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* change the colour of the links on hover */
+.topnav a:hover {
+  background: rgb(128, 211, 240);
+  background: -moz-linear-gradient(
+    273deg,
+    rgba(128, 211, 240, 1) 5%,
+    rgba(115, 180, 194, 1) 32%,
+    rgba(89, 139, 171, 1) 53%,
+    rgba(145, 176, 213, 1) 93%
+  );
+  background: -webkit-linear-gradient(
+    273deg,
+    rgba(128, 211, 240, 1) 5%,
+    rgba(115, 180, 194, 1) 32%,
+    rgba(89, 139, 171, 1) 53%,
+    rgba(145, 176, 213, 1) 93%
+  );
+  background: linear-gradient(
+    273deg,
+    rgba(128, 211, 240, 1) 5%,
+    rgba(115, 180, 194, 1) 32%,
+    rgba(89, 139, 171, 1) 53%,
+    rgba(145, 176, 213, 1) 93%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#80d3f0",endColorstr="#91b0d5",GradientType=1);
+  color: black;
+}
+
+/* adds an active class to highlight the current page */
+.topnav a.active {
+  background-color: #9bcbe9;
+  color: white;
+}
+
+/* hide the link that should open and close the topnac on small screens */
+.topnav .icon {
+  display: none;
+}
+/* THE HAMBURHER MENU END */
+
+/* MEDIA RESPONSES FOR HAMBURGER */
+
+/* when the screen is less than 600pixels, hide all links, except for the first one.
+Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 }
