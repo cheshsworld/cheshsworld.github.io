@@ -248,7 +248,7 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: -20px;
-    margin-left: 50px;
+    margin-left: 100px;
 
     animation: fadeIn linear s;
     -webkit-animation: fadeIn linear 7s;
@@ -258,13 +258,12 @@ footer {
   }
 
   .quote-auth {
-    display: inline-block;
+    display: block;
     font-family: "cabin" sans-serif;
     background: -webkit-linear-gradient(#082657, #2d84d3, #082657);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 30px;
-    padding: 10px;
   }
 }
 
@@ -294,7 +293,7 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 248px;
-    margin-left: 50px;
+    margin-left: 100px;
 
     animation: fadeIn linear s;
     -webkit-animation: fadeIn linear 7s;
@@ -304,12 +303,11 @@ footer {
   }
 
   .quote-auth {
-    display: inline-block;
+    display: block;
     font-family: "cabin" sans-serif;
     background: -webkit-linear-gradient(#082657, #2d84d3, #082657);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 30px;
-    padding: 10px;
   }
 }
