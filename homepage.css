@@ -224,16 +224,6 @@ footer {
 
 /* medium screen */
 
-@media screen and (min-width: 1440px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
 /* The "responsive" class is aded to the topnav with Javascriopt when the user clicks on the icon.
   this class makes the topbac look good on small screens ( display the links vertically instead of horizontally) */
 @media screen and (min-width: 1440px) {
@@ -279,16 +269,6 @@ footer {
 }
 
 /* large screens */
-
-@media screen and (min-width: 2000px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
 
 /* The "responsive" class is aded to the topnav with Javascriopt when the user clicks on the icon.
   this class makes the topbac look good on small screens ( display the links vertically instead of horizontally) */
