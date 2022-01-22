@@ -34,14 +34,28 @@ footer {
   display: inline-block;
   font-family: "Cabin", sans-serif;
   font-size: 120px;
-  color: rgb(8, 3, 56);
-  margin-top: -95px;
+  background: -webkit-linear-gradient(#082657, #2d84d3, #082657);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -20px;
+  margin-left: 50px;
 
   animation: fadeIn linear 7s;
   -webkit-animation: fadeIn linear 7s;
   -moz-animation: fadeIn linear 7s;
   -o-animation: fadeIn linear 7s;
   -ms-animation: fadeIn linear 7s;
+}
+
+.quote-auth {
+  display: block;
+  font-family: "cabin" sans-serif;
+  background: -webkit-linear-gradient(#082657, #2d84d3, #082657);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 30px;
+  /* padding: 10px; */
 }
 
 @keyframes fadeIn {
@@ -190,9 +204,14 @@ footer {
   .fade-in-text {
     display: inline-block;
     font-family: "Cabin", sans-serif;
-    font-size: 30px;
-    color: rgb(8, 3, 56);
-    margin-top: -17px;
+    font-size: 58px;
+    background: -webkit-linear-gradient(#082657, #2d84d3, #082657);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 37px;
+    padding-right: 90px;
+    padding-top: 81px;
+    margin-top: -84px;
     /* padding: 10px;
     margin: 10px; */
 
@@ -201,5 +220,15 @@ footer {
     -moz-animation: fadeIn linear 7s;
     -o-animation: fadeIn linear 7s;
     -ms-animation: fadeIn linear 7s;
+  }
+
+  .quote-auth {
+    display: inline-block;
+    font-family: "cabin" sans-serif;
+    background: -webkit-linear-gradient(#082657, #2d84d3, #082657);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    padding: 10px;
   }
 }
