@@ -192,15 +192,6 @@ footer {
     text-align: left;
   }
 
-  .profile-pic {
-    position: relative;
-    margin: 11%;
-    width: 296px;
-    left: 6px;
-    display: flex;
-    border: 5px solid black;
-  }
-
   .fade-in-text {
     display: inline-block;
     font-family: "Cabin", sans-serif;
