@@ -22,7 +22,8 @@ footer {
   display: inline-flex;
   width: 50px;
   border-radius: 10%;
-  margin: 10px;
+  margin-top: 5px;
+  margin-left: 22px;
   animation: fadeIn linear 7s;
   -webkit-animation: fadeIn linear 7s;
   -moz-animation: fadeIn linear 7s;
@@ -190,7 +191,6 @@ footer {
     text-align: left;
   }
   .fade-in-text {
-    font-family: "Cabin", sans-serif;
     font-size: 79px;
     background: -webkit-linear-gradient(#082657, #2d84d3, #082657);
     -webkit-background-clip: text;
@@ -206,29 +206,16 @@ footer {
   }
 
   .quote-auth {
-    display: inline-block;
-    font-family: "cabin" sans-serif;
+    display: block;
     background: -webkit-linear-gradient(#082657, #2d84d3, #082657);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 30px;
-    padding: 10px;
+    font-size: 29px;
   }
 }
 
 /* -------------------small device --------------------- */
-@media screen and (min-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
 
-/* The "responsive" class is aded to the topnav with Javascriopt when the user clicks on the icon.
-  this class makes the topbac look good on small screens ( display the links vertically instead of horizontally) */
 @media screen and (min-width: 600px) {
   .topnav.responsive {
     position: relative;
@@ -244,14 +231,12 @@ footer {
     text-align: left;
   }
   .fade-in-text {
-    text-align: flex-end;
     font-family: "Cabin", sans-serif;
-    font-size: 58px;
+    font-size: 98px;
     background: -webkit-linear-gradient(#082657, #2d84d3, #082657);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-left: 37px;
-    padding-right: 90px;
     padding-top: 81px;
 
     animation: fadeIn linear s;
@@ -262,7 +247,7 @@ footer {
   }
 
   .quote-auth {
-    display: inline-block;
+    display: block;
     font-family: "cabin" sans-serif;
     background: -webkit-linear-gradient(#082657, #2d84d3, #082657);
     -webkit-background-clip: text;
@@ -273,17 +258,6 @@ footer {
 }
 
 /* ---------------------them odd devices ---------------- */
-
-@media screen and (min-width: 800px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
 @media screen and (min-width: 800px) {
   .topnav.responsive {
     position: relative;
@@ -326,15 +300,6 @@ footer {
 }
 
 /* ----------medium device ------------------------------------ */
-@media screen and (min-width: 900px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
 
 @media screen and (min-width: 900px) {
   .topnav.responsive {
@@ -382,12 +347,11 @@ footer {
 
 /* medium screen */
 
-/* The "responsive" class is aded to the topnav with Javascriopt when the user clicks on the icon.
-  this class makes the topbac look good on small screens ( display the links vertically instead of horizontally) */
 @media screen and (min-width: 1440px) {
   .topnav.responsive {
     position: relative;
   }
+
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -427,9 +391,7 @@ footer {
 
 /* large screens */
 
-/* The "responsive" class is aded to the topnav with Javascriopt when the user clicks on the icon.
-  this class makes the topbac look good on small screens ( display the links vertically instead of horizontally) */
-@media screen and (min-width: 2000px) {
+/@media screen and (min-width: 2000px) {
   .topnav.responsive {
     position: relative;
   }
