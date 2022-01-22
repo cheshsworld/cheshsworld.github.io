@@ -12,16 +12,20 @@ body {
   flex-direction: column;
 }
 
-form {
-  margin: 50px auto;
-  width: 90%;
+h1 {
+  font-family: "Cabin", sans-serif;
+  font-size: 50px;
+  text-decoration: underline;
+  background: -webkit-linear-gradient(#082657, #2d84d3, #082657);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-h1 {
-  padding: 2%;
-  justify-content: center;
+.header-h1 {
+  padding: 10px;
   text-align: center;
-  text-decoration-line: underline;
+  background: #3a47646b;
+  border-bottom: 3px solid black;
 }
 
 footer {
@@ -30,6 +34,13 @@ footer {
   background-color: #333;
   color: #f2f2f2;
   font-size: 12px;
+}
+
+/* form style start*/
+
+form {
+  margin: 50px auto;
+  width: 90%;
 }
 
 .form-item {
@@ -76,6 +87,8 @@ footer {
 .form-item button {
   width: 100px;
 }
+
+/* form style end */
 
 /* THE HAMBURGER MENU START */
 /* adds top nav bg colour */

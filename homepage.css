@@ -16,43 +16,81 @@ footer {
   color: white;
 }
 
-h1 {
-  font-family: "Cabin", sans-serif;
-  font-size: 50px;
-  text-decoration: underline;
-  background: -webkit-linear-gradient(#082657, #2d84d3, #082657);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .logo {
-  padding: 20px;
-  width: 10px;
-}
-
-.header-h1 {
-  padding: 10px;
-  text-align: center;
-  background: #3a47646b;
-  border-bottom: 3px solid black;
-}
-
-.profile-pic {
-  position: relative;
-  margin: 1%;
-  width: 200px;
-  left: 6px;
-  display: flex;
-  border: 5px solid black;
-}
-
-.about-para {
-  text-align: center;
+  display: inline-flex;
+  width: 50px;
+  border-radius: 10%;
   margin: 10px;
+  animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
 }
 
-/* THE HAMBURGER MENU START */
-/* adds top nav bg colour */
+/* animation for quote start */
+
+.fade-in-text {
+  display: inline-block;
+  font-family: "Cabin", sans-serif;
+  font-size: 120px;
+  color: rgb(8, 3, 56);
+  margin-top: -95px;
+
+  animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* animation for quote end */
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -112,7 +150,7 @@ h1 {
 /* MEDIA RESPONSES FOR HAMBURGER */
 
 /* when the screen is less than 600pixels, hide all links, except for the first one.
-Show the link that contains should open and close the topnav (.icon) */
+  Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -124,7 +162,7 @@ Show the link that contains should open and close the topnav (.icon) */
 }
 
 /* The "responsive" class is aded to the topnav with Javascriopt when the user clicks on the icon.
-this class makes the topbac look good on small screens ( display the links vertically instead of horizontally) */
+  this class makes the topbac look good on small screens ( display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
@@ -149,11 +187,19 @@ this class makes the topbac look good on small screens ( display the links verti
     border: 5px solid black;
   }
 
-  h1 {
+  .fade-in-text {
+    display: inline-block;
     font-family: "Cabin", sans-serif;
-    font-size: 40px;
-    background: -webkit-linear-gradient(#082657, #2d84d3, #082657);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    color: rgb(8, 3, 56);
+    margin-top: -17px;
+    /* padding: 10px;
+    margin: 10px; */
+
+    animation: fadeIn linear s;
+    -webkit-animation: fadeIn linear 7s;
+    -moz-animation: fadeIn linear 7s;
+    -o-animation: fadeIn linear 7s;
+    -ms-animation: fadeIn linear 7s;
   }
 }
