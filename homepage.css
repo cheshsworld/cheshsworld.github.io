@@ -16,6 +16,8 @@ footer {
   color: white;
 }
 
+/* animation for quote start */
+
 .logo {
   display: inline-flex;
   width: 50px;
@@ -27,8 +29,6 @@ footer {
   -o-animation: fadeIn linear 7s;
   -ms-animation: fadeIn linear 7s;
 }
-
-/* animation for quote start */
 
 .fade-in-text {
   display: inline-block;
