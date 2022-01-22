@@ -391,7 +391,7 @@ footer {
 
 /* large screens */
 
-/@media screen and (min-width: 2000px) {
+@media screen and (min-width: 2000px) {
   .topnav.responsive {
     position: relative;
   }
