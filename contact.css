@@ -176,9 +176,10 @@ form {
     display: block;
     text-align: left;
   }
+
   .form-item input,
   .form-item textarea {
-    flex-basis: 50%;
+    flex-basis: 89%;
     border: 2px solid #0d0944;
   }
 }
