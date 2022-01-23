@@ -179,7 +179,7 @@ form {
 
   .form-item input,
   .form-item textarea {
-    flex-basis: 89%;
+    flex-basis: 115%;
     border: 2px solid #0d0944;
   }
 }
