@@ -33,9 +33,9 @@ h1 {
 }
 
 .profile-pic {
-  position: relative;
+  position: absolute;
   margin: 1%;
-  width: 200px;
+  width: 423px;
   left: 6px;
   display: flex;
   border: 5px solid black;
