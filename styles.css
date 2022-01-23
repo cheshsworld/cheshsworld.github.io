@@ -25,6 +25,10 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.sub-header {
+  text-align: center;
+}
+
 .header-h1 {
   padding: 10px;
   text-align: center;
